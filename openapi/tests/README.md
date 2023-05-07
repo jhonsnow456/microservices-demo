@@ -16,7 +16,7 @@
 ## Approches & Challanges
 
 1. The setup of SockShop project has been done sucessfully.
-   ![localmachine-setup]('imgs/localmachine-setup.png')
+   ![localmachine-setup](https://user-images.githubusercontent.com/54764701/236599510-ba4e3373-747a-413c-844d-23cd694840bd.png)
 2. Setting Up a integration testing environment using dredd out of the system.
 3. Build a docker compose
 4. Challange:
