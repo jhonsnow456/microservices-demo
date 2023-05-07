@@ -17,7 +17,8 @@
 
 1. The setup of SockShop project has been done sucessfully.
    ![localmachine-setup](https://user-images.githubusercontent.com/54764701/236599510-ba4e3373-747a-413c-844d-23cd694840bd.png)
-2. Setting Up a integration testing environment using dredd out of the system.
+2. Setting Up a integration testing environment using dredd out of the system. However used jest to test the same.
+   ![test-img](https://user-images.githubusercontent.com/54764701/236673680-8d850045-cbe6-47e8-82c5-55e829264d63.png)
 3. Build a docker compose
 4. Challange:
    - Building the environment using command
