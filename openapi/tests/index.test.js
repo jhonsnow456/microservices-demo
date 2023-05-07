@@ -7,5 +7,6 @@ describe("get all catlogue data", () => {
     const result = await response.json();
 
     expect(response.status).toBe(200);
+    expect(result.length).toBe(9);
   });
 });
