@@ -1,8 +1,45 @@
 const fetch = require("node-fetch");
 const host = "http://localhost:8080";
 
-describe("get all catlogue data", () => {
-  it("should return 200 when data is in db", async () => {
+describe("GET /", () => {
+  it("/cart", async () => {
+    const response = await fetch(host + "/cart");
+
+    expect(response.status).toBe(200);
+  });
+});
+
+describe("GET /customers/dZXnr0YQAt-Qg8pi4_LHxOhYN2Bmm3f9", () => {
+  it("/customers", async () => {
+    const response = await fetch(
+      host + "/customers/dZXnr0YQAt-Qg8pi4_LHxOhYN2Bmm3f9"
+    );
+
+    expect(response.status).toBe(200);
+  });
+});
+
+describe("GET /catalogue", () => {
+  /**
+   * FAILING TEST
+   */
+  it("returned wrong length", async () => {
+    const response = await fetch(host + "/catalogue");
+    const result = await response.json();
+
+    expect(response.status).toBe(200);
+    expect(result.length).toBe(7);
+  });
+
+  it("Check for catlog size is 6 and status code", async () => {
+    const response = await fetch(host + "/catalogue?size=6");
+    const result = await response.json();
+
+    expect(response.status).toBe(200);
+    expect(result.length).toBe(6);
+  });
+
+  it("Check for catlog size and status code", async () => {
     const response = await fetch(host + "/catalogue");
     const result = await response.json();
 
